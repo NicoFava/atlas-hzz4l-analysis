@@ -1,199 +1,111 @@
-# atlas-hzz4l-analysis
+# ATLAS H → ZZ* → 4ℓ Analysis
 
-This repository contains a PyROOT-based analysis of the Higgs boson discovery channel
-H -> ZZ* -> 4l using ATLAS 13 TeV Open Data.
-The project processes ROOT input files, applies a simplified event selection, produces
-histograms, and generates publication-style plots.
+🌍 **Navigation:** [🇮🇹 Italiano](#-italiano) | [🇬🇧 English](#-english)
+
+<div align="center">
+  <img src="Higgs_Discovery_Plot.png" alt="Higgs Invariant Mass Plot" width="800"/>
+  <p><i>The reconstructed Higgs boson invariant mass peak at ~125 GeV, showing Data vs. Monte Carlo prediction.</i></p>
+</div>
 
 ---
 
-## Italiano
+## 🇮🇹 Italiano
 
 ### Obiettivo del progetto
+Questo repository contiene un'analisi dati in Python (basata su PyROOT) per la ricostruzione del decadimento del Bosone di Higgs nel canale a quattro leptoni ($H \rightarrow ZZ^* \rightarrow 4\ell$). 
 
-Questo progetto analizza dati e simulazioni Monte Carlo per studiare il canale
-H -> ZZ* -> 4l. L'idea è mostrare come, a partire da file ROOT, si possano:
-
-- selezionare eventi di interesse;
-- costruire istogrammi di variabili fisiche;
-- confrontare dati e predizioni MC;
-- produrre plot finali in stile ATLAS.
+L'analisi è stata condotta utilizzando gli **ATLAS Open Data** ufficiali, basati su collisioni protone-protone al CERN a un'energia nel centro di massa di $\sqrt{s} = 13\text{ TeV}$, corrispondenti a una luminosità integrata di $10\text{ fb}^{-1}$. L'obiettivo è mostrare l'intero flusso di lavoro tipico della fisica delle alte energie: dal processamento dei file ROOT grezzi, all'applicazione dei tagli cinematici, fino all'estrazione del segnale dal rumore di fondo.
 
 ### Struttura della repository
-
-- [scripts/analyze4.py](scripts/analyze4.py): script principale di analisi.
-  Legge un file ROOT, applica la selezione degli eventi e salva gli istogrammi in una
-  cartella di output.
-- [plot_higgs.py](plot_higgs.py): genera un plot semplice del mass spectrum m4l.
-- [plot_higgs2.py](plot_higgs2.py): genera un plot più completo con stack MC, dati e ratio plot.
-- [run_all.py](run_all.py): esegue l'analisi su tutti i file ROOT presenti nella cartella data.
-- [data](data): contiene i file ROOT di input (dati e MC).
-- [output](output): contiene i risultati prodotti dagli script.
+* 📂 **`data/`**: contiene i file ROOT di input (Dati reali e simulazioni Monte Carlo). *(Nota: non tracciati su Git per limiti di dimensione)*.
+* 📂 **`output/`**: directory di runtime per i risultati intermedi e gli istogrammi.
+* 📜 **`scripts/analyze4.py`**: script principale. Legge i file ROOT, applica la selezione degli eventi (cutflow) e salva gli istogrammi.
+* 📜 **`run_all.py`**: orchestratore batch. Processa automaticamente tutti i file presenti in `data/` generando un file di log dettagliato (`analisi_batch.log`).
+* 📜 **`plot_higgs.py` / `plot_higgs2.py`**: macro grafiche finali. Fondono gli output per generare plot in stile ATLAS da pubblicazione, includendo le bande di incertezza statistica e il *Ratio Plot* (Dati/MC).
 
 ### Requisiti
+* Python 3
+* ROOT / PyROOT (CERN) installato e configurato nel `$PYTHONPATH`
 
-Per eseguire il progetto servono:
+### Workflow di Analisi
 
-- Python 3
-- ROOT / PyROOT installato e funzionante
-- un ambiente con i pacchetti Python standard
+**1. Selezione degli eventi (Cutflow)**
+Lo script `analyze4.py` filtra le collisioni richiedendo:
+* Esattamente 4 leptoni ("good" leptons) con tagli su $p_T$ e isolamento.
+* Veto su $\Delta R$ e risonanze a bassa massa.
+* Identificazione delle coppie $Z_1$ (on-shell) e $Z_2$ (off-shell).
+* Tagli cinematici sulle masse invarianti di $Z_1$ e $Z_2$.
 
-### Workflow principale
-
-1. I file ROOT vengono caricati dalla cartella [data](data).
-2. Lo script [scripts/analyze4.py](scripts/analyze4.py) analizza ciascun file e produce:
-   - un file ROOT con gli istogrammi: [output](output)/.../analysis_histograms.root
-   - immagini PNG per i vari istogrammi
-3. Lo script [run_all.py](run_all.py) può processare in batch tutti i file presenti in [data](data).
-4. I plot finali vengono creati con [plot_higgs.py](plot_higgs.py) e [plot_higgs2.py](plot_higgs2.py).
-
-### Esecuzione
-
-#### Analizzare un singolo file
-
-```bash
-python3 scripts/analyze4.py data/mc_345060.root
-```
-
-Se non si specifica una cartella di output, il risultato viene salvato in una directory
-sotto [output](output) in base al nome del file.
-
-#### Analizzare tutti i file in batch
-
+**2. Esecuzione Massiva**
 ```bash
 python3 run_all.py
+
 ```
 
-Questo script cerca tutti i file ROOT in [data](data) e li processa uno per uno, scrivendo
-il log di esecuzione in [analisi_batch.log](analisi_batch.log).
+*(Processa l'intero dataset producendo file ROOT intermedi separati per ogni sample).*
 
-#### Creare i plot
+**3. Generazione del Plot di Scoperta**
 
 ```bash
-python3 plot_higgs.py
 python3 plot_higgs2.py
+
 ```
 
-I grafici vengono salvati nella cartella principale del progetto come PDF/PNG.
-
-### Cosa fa lo script di analisi
-
-Lo script [scripts/analyze4.py](scripts/analyze4.py) esegue una selezione degli eventi basata su:
-
-- molteplicità dei leptoni;
-- tagli cinematici sui pT;
-- selezione di leptoni "good";
-- veto su DeltaR e massa bassa;
-- ricerca di coppie di Z;
-- tagli sulla massa di Z1, Z2 e m4l.
-
-Gli istogrammi prodotti includono, tra gli altri:
-
-- cutflow;
-- numero di leptoni;
-- pT del leading lepton;
-- massa di Z1;
-- massa di Z2;
-- massa del sistema di 4 leptoni (m_Higgs).
-
-### Note importanti
-
-- I file ROOT di input sono tipicamente pesanti e non vengono tracciati nel repository.
-- Le cartelle [output](output) e [data](data) sono considerate contenitori di risultati e input locali.
-- I file PDF/PNG generati possono essere ricreati facilmente dai relativi script.
+*(Sovrappone i fondi simulati $ZZ, WZ$, il segnale $H \rightarrow 4\ell$ e i Dati reali, salvando il risultato come PDF/PNG).*
 
 ---
 
-## English
+## 🇬🇧 English
 
-### Project goal
+### Project Goal
 
-This repository contains an analysis of the Higgs boson discovery channel
-H -> ZZ* -> 4l using ATLAS 13 TeV Open Data. The workflow starts from ROOT files,
-applies a simplified event selection, builds histograms, and produces final plots.
+This repository provides a complete Python (PyROOT-based) analysis framework to reconstruct the Higgs boson decay in the four-lepton "golden channel" ($H \rightarrow ZZ^* \rightarrow 4\ell$).
 
-### Repository structure
+The analysis is performed using the official **ATLAS Open Data**, which consists of proton-proton collision data collected at the LHC at a center-of-mass energy of $\sqrt{s} = 13\text{ TeV}$, corresponding to an integrated luminosity of $10\text{ fb}^{-1}$. The project aims to demonstrate a full high-energy physics workflow: from processing raw ROOT trees and applying kinematic selections, to the final signal extraction and publication-quality plotting.
 
-- [scripts/analyze4.py](scripts/analyze4.py): main analysis script.
-  It reads a ROOT file, applies event selection, and saves histograms to an output directory.
-- [plot_higgs.py](plot_higgs.py): creates a simple m4l spectrum plot.
-- [plot_higgs2.py](plot_higgs2.py): creates a more complete plot with MC stack, data points, and a ratio plot.
-- [run_all.py](run_all.py): runs the analysis over all ROOT files in the data folder.
-- [data](data): contains the input ROOT files (data and MC).
-- [output](output): contains the analysis outputs generated by the scripts.
+### Repository Structure
+
+* 📂 **`data/`**: contains the input ROOT files (Real Data and Monte Carlo simulations). *(Note: untracked due to file size limits)*.
+* 📂 **`output/`**: runtime directory for intermediate results and histograms.
+* 📜 **`scripts/analyze4.py`**: core analysis script. Reads ROOT trees, applies the event selection (cutflow), and outputs histogram files.
+* 📜 **`run_all.py`**: batch orchestrator. Automatically processes all files in the `data/` folder, producing a detailed execution log (`analisi_batch.log`).
+* 📜 **`plot_higgs.py` / `plot_higgs2.py**`: final plotting macros. They merge the outputs to generate ATLAS-style plots, including statistical uncertainty bands and Data/MC ratio pads.
 
 ### Requirements
 
-To run the project you need:
+* Python 3
+* ROOT / PyROOT (CERN) installed and working
 
-- Python 3
-- ROOT / PyROOT installed and working
-- a standard Python environment
+### Analysis Workflow
 
-### Main workflow
+**1. Event Selection (Cutflow)**
+The `analyze4.py` script filters collisions based on:
 
-1. ROOT files are loaded from [data](data).
-2. [scripts/analyze4.py](scripts/analyze4.py) processes each file and produces:
-   - a ROOT histogram file in [output](output)/.../analysis_histograms.root
-   - PNG images for the derived histograms
-3. [run_all.py](run_all.py) can process all files in [data](data) in batch mode.
-4. Final plots are produced by [plot_higgs.py](plot_higgs.py) and [plot_higgs2.py](plot_higgs2.py).
+* Exactly 4 "good" leptons satisfying $p_T$ and isolation requirements.
+* $\Delta R$ and low-mass resonance vetoes.
+* $Z_1$ (on-shell) and $Z_2$ (off-shell) pair identification.
+* Kinematic cuts on $Z_1$ and $Z_2$ invariant masses.
 
-### Running the code
-
-#### Analyze a single file
-
-```bash
-python3 scripts/analyze4.py data/mc_345060.root
-```
-
-If no output directory is specified, the results are saved under [output](output) based on the input filename.
-
-#### Analyze all files in batch
+**2. Batch Processing**
 
 ```bash
 python3 run_all.py
+
 ```
 
-This script scans all ROOT files in [data](data) and processes them one by one, writing a log to [analisi_batch.log](analisi_batch.log).
+*(Runs the selection over the entire dataset, saving independent ROOT files for each sample).*
 
-#### Generate plots
+**3. Generating the Discovery Plot**
 
 ```bash
-python3 plot_higgs.py
 python3 plot_higgs2.py
+
 ```
 
-The plots are saved in the project root as PDF/PNG files.
-
-### What the analysis script does
-
-The script [scripts/analyze4.py](scripts/analyze4.py) performs an event selection based on:
-
-- lepton multiplicity;
-- pT-based kinematic cuts;
-- selection of good leptons;
-- DeltaR and low-mass vetoes;
-- Z-pair identification;
-- cuts on Z1 mass, Z2 mass, and m4l.
-
-The produced histograms include:
-
-- cutflow;
-- lepton multiplicity;
-- leading lepton pT;
-- Z1 invariant mass;
-- Z2 invariant mass;
-- four-lepton invariant mass (m_Higgs).
-
-### Important notes
-
-- Input ROOT files are typically large and are not tracked by the repository.
-- The [output](output) and [data](data) folders are considered local runtime directories.
-- Generated PDF/PNG files can be recreated from the provided scripts.
+*(Stacks the simulated $ZZ, WZ$ backgrounds with the $H \rightarrow 4\ell$ signal and overlays the real Data, exporting the final PDF/PNG).*
 
 ---
 
-## License
+*Distributed under the terms of the [LICENSE](https://www.google.com/search?q=LICENSE) file.*
 
-This project is distributed under the terms of the [LICENSE](LICENSE) file.
+```
