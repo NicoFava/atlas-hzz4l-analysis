@@ -1,0 +1,258 @@
+=== RUN DI ANALISI BATCH ===
+Data e ora inizio: 2026-06-30 17:40:49
+File processati: 14
+========================================
+
+[17:40:49] Processando: mc_341122.ggH125_tautaull.4lep.root
+Path: data/mc_341122.ggH125_tautaull.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 6 eventi...
+Normalizzazione MC: XSection = 0.3407922089099884 pb, SumWeights = 20207228.0, Lumi = 10000.0 pb^-1
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/analysis_output_341122
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341122/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341122/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341122/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341122/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341122/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341122/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:40:51] Processando: mc_341964.WH125_ZZ4lep.4lep.root
+Path: data/mc_341964.WH125_ZZ4lep.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 15379 eventi...
+Normalizzazione MC: XSection = 0.00037689998862333596 pb, SumWeights = 149400.0, Lumi = 10000.0 pb^-1
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/analysis_output_341964
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341964/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341964/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341964/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341964/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341964/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341964/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:40:55] Processando: data_B.4lep.root
+Path: data/data_B.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 156 eventi...
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/output_data_B
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_B/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_B/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_B/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_B/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_B/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_B/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:40:57] Processando: mc_363491.lllv.4lep.root
+Path: data/mc_363491.lllv.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 9340 eventi...
+Normalizzazione MC: XSection = 4.604899883270264 pb, SumWeights = 5441475.0, Lumi = 10000.0 pb^-1
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/analysis_output_363491
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363491/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363491/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363491/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363491/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363491/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363491/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:41:00] Processando: mc_363356.ZqqZll.4lep.root
+Path: data/mc_363356.ZqqZll.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 254 eventi...
+Normalizzazione MC: XSection = 2.2035510540008545 pb, SumWeights = 3439266.0, Lumi = 10000.0 pb^-1
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/analysis_output_363356
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363356/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363356/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363356/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363356/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363356/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363356/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:41:02] Processando: data_A.4lep.root
+Path: data/data_A.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 39 eventi...
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/output_data_A
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_A/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_A/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_A/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_A/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_A/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_A/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:41:03] Processando: mc_345337.ZH125J_llWW2lep.4lep.root
+Path: data/mc_345337.ZH125J_llWW2lep.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 35694 eventi...
+Normalizzazione MC: XSection = 0.07621400058269501 pb, SumWeights = 22685.3125, Lumi = 10000.0 pb^-1
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/analysis_output_345337
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345337/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345337/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345337/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345337/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345337/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345337/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:41:10] Processando: mc_363490.llll.4lep.root
+Path: data/mc_363490.llll.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 554279 eventi...
+  ... processati 50000 / 554279
+  ... processati 100000 / 554279
+  ... processati 150000 / 554279
+  ... processati 200000 / 554279
+  ... processati 250000 / 554279
+  ... processati 300000 / 554279
+  ... processati 350000 / 554279
+  ... processati 400000 / 554279
+  ... processati 450000 / 554279
+  ... processati 500000 / 554279
+  ... processati 550000 / 554279
+Normalizzazione MC: XSection = 1.2577999830245972 pb, SumWeights = 7538706.0, Lumi = 10000.0 pb^-1
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/analysis_output_363490
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363490/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363490/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363490/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363490/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363490/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_363490/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:42:36] Processando: mc_341947.ZH125_ZZ4lep.4lep.root
+Path: data/mc_341947.ZH125_ZZ4lep.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 14485 eventi...
+Normalizzazione MC: XSection = 2.1424784790724516e-06 pb, SumWeights = 150000.0, Lumi = 10000.0 pb^-1
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/analysis_output_341947
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341947/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341947/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341947/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341947/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341947/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341947/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:42:41] Processando: mc_345060.ggH125_ZZ4lep.4lep.root
+Path: data/mc_345060.ggH125_ZZ4lep.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 164716 eventi...
+  ... processati 50000 / 164716
+  ... processati 100000 / 164716
+  ... processati 150000 / 164716
+Normalizzazione MC: XSection = 0.006023900117725134 pb, SumWeights = 27881776.0, Lumi = 10000.0 pb^-1
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/analysis_output_345060
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345060/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345060/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345060/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345060/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345060/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_345060/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:43:07] Processando: mc_341155.VBFH125_tautaull.4lep.root
+Path: data/mc_341155.VBFH125_tautaull.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 20 eventi...
+Normalizzazione MC: XSection = 0.02906767465174198 pb, SumWeights = 2078800.0, Lumi = 10000.0 pb^-1
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/analysis_output_341155
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341155/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341155/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341155/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341155/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341155/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_341155/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:43:09] Processando: data_C.4lep.root
+Path: data/data_C.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 237 eventi...
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/output_data_C
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_C/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_C/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_C/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_C/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_C/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_C/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:43:11] Processando: data_D.4lep.root
+Path: data/data_D.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 400 eventi...
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/output_data_D
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_D/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_D/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_D/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_D/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_D/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/output_data_D/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+[17:43:13] Processando: mc_344235.VBFH125_ZZ4lep.4lep.root
+Path: data/mc_344235.VBFH125_ZZ4lep.4lep.root
+--- OUTPUT ANALISI ---
+Inizio processamento di 191126 eventi...
+  ... processati 50000 / 191126
+  ... processati 100000 / 191126
+  ... processati 150000 / 191126
+Normalizzazione MC: XSection = 0.0004633011994883418 pb, SumWeights = 3680490.75, Lumi = 10000.0 pb^-1
+Analisi completata. Output salvato in: /home/fava/lab/H_ZZ_4l/output/analysis_output_344235
+
+--- AVVISI / ERRORI ---
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_344235/cutflow.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_344235/nlep.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_344235/lead_lep_pt.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_344235/m_Z1.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_344235/m_Z2.png has been created
+Info in <TCanvas::Print>: png file /home/fava/lab/H_ZZ_4l/output/analysis_output_344235/m_Higgs.png has been created
+Stato: SUCCESSO (Codice 0)
+----------------------------------------
+
+=== ANALISI TERMINATA ===
+Data e ora fine: 2026-06-30 17:43:43
