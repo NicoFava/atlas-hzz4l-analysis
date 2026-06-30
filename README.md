@@ -107,5 +107,3 @@ python3 plot_higgs2.py
 ---
 
 *Distributed under the terms of the [LICENSE](https://www.google.com/search?q=LICENSE) file.*
-
-```
